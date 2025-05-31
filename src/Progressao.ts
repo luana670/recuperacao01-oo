@@ -6,7 +6,14 @@ export class Progressao {
    * @returns
    */
   aritmetica(quantidade: number, razao: number) {
-    return [];
+    let a1 = 1;
+    let resultado = [];
+
+    for(let i = 0; i < quantidade; i ++) {
+      resultado.push(a1 + i * razao);
+    }
+    return resultado;
+
   }
 
   /**
@@ -16,6 +23,12 @@ export class Progressao {
    * @returns
    */
   geometrica(quantidade: number, razao: number) {
-    return [];
+    let a1 = 1;
+    let resultado = [];
+
+    for(let i = 0; i < quantidade; i ++) {
+      resultado.push(a1 * (razao**i));
+    }
+    return resultado;
   }
 }
